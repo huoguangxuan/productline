@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+        <title>万达销售物业研发成果管理系统</title>
+
+        <!-- Bootstrap -->
+        <link href="stylesheets/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheets/pl.css">
+        <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+        <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+        <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    <body>
+        <nav class="navbar navbar-white z-depth-1">
+            <div class="container width1200" style="min-width:1200px;">
+                <a class="navbar-brand" href="index.html">
+                    <svg version="1.1" id="lay1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                        y="0px"
+                        width="145px" viewBox="0 0 411.3 89.3"
+                        style="enable-background:new 0 0 411.3 89.3;"
+                        xml:space="preserve">
+
+                        <g>
+                            <path class="st0"
+                                d="M43.6,0C19,0.5-0.6,21,0,45.6C0.5,70.3,21,89.8,45.6,89.3c24.6-0.6,44.2-21,43.6-45.6C88.7,19,68.3-0.5,43.6,0
+                                L43.6,0z
+                                M45.4,81c-13.2,0.3-24.9-6.4-31.6-16.6c3.1,1.4,6.8,2.4,10.8,2.7c8.3,0.7,15.7-1.6,20-5.6c4.3,4,11.7,6.2,20,5.6
+                                c4-0.3,7.7-1.3,10.9-2.8C69.1,74.1,58.1,80.7,45.4,81L45.4,81z
+                                M42.2,22.7c0,0,9-2,8.6,10.2c-0.1,5.9-1.2,11.7-2.4,14.9
+                                c-0.9,2.6-2.3,2.7-3.3,2.7C45,37.2,42.2,22.7,42.2,22.7L42.2,22.7z
+                                M67.9,54.9c-7,2.7-13.8,3.1-18.8,1.6c4.5-5.6,6.3-12.7,7.1-17.5
+                                c0.7-4.1,1-8.5,0.6-13.1c-0.8-10.2-9.3-11-12.3-11.5c-2.9-0.5-10.1-0.5-10.1-0.5s4.4,17.4,5.4,42.7c-4.9,1.5-11.7,1.1-18.6-1.6
+                                c-5.9-2.3-10.6-5.8-13.5-9.5l0-0.4C7.3,24.6,23.4,7.7,43.8,7.3C64.2,6.8,81.1,23,81.5,43.3c0,0.7-0.1,1.3-0.1,1.9
+                                C78.6,49,73.8,52.6,67.9,54.9L67.9,54.9z" />
+                                <g>
+                                    <g>
+                                        <path class="st0"
+                                            d="M117.7,87.9l-5.7-24h5l3.6,16.5l4.4-16.5h5.8l4.2,16.8l3.7-16.8h4.9l-5.8,24h-5.1l-4.8-18l-4.8,18H117.7z"
+                                            />
+                                            <path class="st0"
+                                                d="M165.7,87.9h-5.3l-2.1-5.5h-9.6l-2,5.5h-5.1l9.4-24h5.1L165.7,87.9z
+                                                M156.8,78.4l-3.3-8.9l-3.2,8.9H156.8z"
+                                                />
+                                                <path class="st0"
+                                                    d="M168.3,87.9v-24h4.7l9.8,16v-16h4.5v24h-4.9l-9.7-15.7v15.7H168.3z"
+                                                    />
+                                                    <path class="st0"
+                                                        d="M192.5,63.9h8.9c2,0,3.5,0.2,4.6,0.5c1.4,0.4,2.6,1.2,3.6,2.2c1,1.1,1.8,2.4,2.3,3.9
+                                                        c0.5,1.5,0.8,3.4,0.8,5.7c0,2-0.2,3.7-0.7,5.1c-0.6,1.7-1.5,3.2-2.6,4.2c-0.8,0.8-2,1.5-3.4,1.9c-1.1,0.3-2.5,0.5-4.3,0.5h-9.1
+                                                        V63.9z
+                                                        M197.3,68v15.9h3.6c1.4,0,2.3-0.1,2.9-0.2c0.8-0.2,1.4-0.5,2-1c0.5-0.5,0.9-1.2,1.3-2.3c0.3-1.1,0.5-2.5,0.5-4.4
+                                                        c0-1.9-0.2-3.3-0.5-4.3c-0.3-1-0.8-1.8-1.4-2.3c-0.6-0.6-1.3-0.9-2.2-1.1c-0.7-0.2-2-0.2-4-0.2H197.3z"
+                                                        />
+                                                        <path class="st0"
+                                                            d="M238.4,87.9h-5.3l-2.1-5.5h-9.6l-2,5.5h-5.1l9.4-24h5.1L238.4,87.9z
+                                                            M229.5,78.4l-3.3-8.9l-3.2,8.9H229.5z"
+                                                            />
+                                                            <path class="st0"
+                                                                d="M260.2,79.1v-4h10.5v9.6c-1,1-2.5,1.8-4.4,2.6c-1.9,0.8-3.9,1.1-5.9,1.1c-2.5,0-4.7-0.5-6.6-1.6
+                                                                c-1.9-1.1-3.3-2.6-4.2-4.5c-0.9-2-1.4-4.1-1.4-6.4c0-2.5,0.5-4.7,1.6-6.7c1-1.9,2.6-3.4,4.6-4.5c1.5-0.8,3.5-1.2,5.7-1.2
+                                                                c3,0,5.3,0.6,7,1.9c1.7,1.2,2.8,3,3.2,5.2l-4.8,0.9c-0.3-1.2-1-2.1-1.9-2.8c-0.9-0.7-2.1-1-3.5-1c-2.1,0-3.8,0.7-5.1,2
+                                                                c-1.3,1.3-1.9,3.3-1.9,6c0,2.9,0.6,5,1.9,6.4c1.3,1.4,2.9,2.1,5,2.1c1,0,2-0.2,3.1-0.6c1-0.4,1.9-0.9,2.6-1.4v-3H260.2z"
+                                                                />
+                                                                <path
+                                                                    class="st0"
+                                                                    d="M275.2,87.9v-24h10.2c2.6,0,4.4,0.2,5.6,0.6c1.2,0.4,2.1,1.2,2.8,2.3c0.7,1.1,1,2.4,1,3.8
+                                                                    c0,1.8-0.5,3.3-1.6,4.5c-1.1,1.2-2.6,1.9-4.7,2.2c1,0.6,1.9,1.3,2.6,2c0.7,0.7,1.6,2,2.8,3.9l2.9,4.7h-5.8l-3.5-5.2
+                                                                    c-1.2-1.9-2.1-3-2.6-3.5c-0.5-0.5-0.9-0.8-1.5-1c-0.5-0.2-1.3-0.3-2.4-0.3h-1v10H275.2z
+                                                                    M280,74h3.6c2.3,0,3.8-0.1,4.4-0.3
+                                                                    c0.6-0.2,1-0.5,1.4-1c0.3-0.5,0.5-1.1,0.5-1.8c0-0.8-0.2-1.5-0.6-2c-0.4-0.5-1-0.8-1.8-0.9c-0.4-0.1-1.6-0.1-3.5-0.1H280V74z"
+                                                                    />
+                                                                    <path
+                                                                        class="st0"
+                                                                        d="M298.4,76c0-2.5,0.4-4.5,1.1-6.2c0.5-1.2,1.3-2.3,2.2-3.3c0.9-1,2-1.7,3.1-2.2c1.5-0.6,3.2-0.9,5.2-0.9
+                                                                        c3.5,0,6.4,1.1,8.5,3.3c2.1,2.2,3.2,5.2,3.2,9.2c0,3.9-1.1,6.9-3.2,9.1c-2.1,2.2-4.9,3.3-8.5,3.3c-3.6,0-6.4-1.1-8.5-3.3
+                                                                        C299.4,82.9,298.4,79.9,298.4,76z
+                                                                        M303.4,75.9c0,2.7,0.6,4.8,1.9,6.2c1.3,1.4,2.8,2.1,4.8,2.1c1.9,0,3.5-0.7,4.8-2.1
+                                                                        c1.2-1.4,1.9-3.5,1.9-6.3c0-2.8-0.6-4.8-1.8-6.2c-1.2-1.4-2.8-2-4.8-2c-2,0-3.6,0.7-4.8,2.1C304,71.1,303.4,73.1,303.4,75.9z"
+                                                                        />
+                                                                        <path
+                                                                            class="st0"
+                                                                            d="M325.4,63.9h4.8v13c0,2.1,0.1,3.4,0.2,4c0.2,1,0.7,1.8,1.5,2.4c0.8,0.6,1.8,0.9,3.2,0.9
+                                                                            c1.4,0,2.4-0.3,3.1-0.8c0.7-0.6,1.1-1.3,1.3-2.1c0.1-0.8,0.2-2.2,0.2-4.1V63.9h4.8v12.6c0,2.9-0.1,4.9-0.4,6.1
+                                                                            c-0.3,1.2-0.7,2.2-1.4,3c-0.7,0.8-1.6,1.5-2.8,2c-1.2,0.5-2.7,0.7-4.6,0.7c-2.3,0-4-0.3-5.2-0.8c-1.2-0.5-2.1-1.2-2.8-2.1
+                                                                            c-0.7-0.9-1.1-1.7-1.4-2.7c-0.3-1.4-0.5-3.4-0.5-6.1V63.9z"
+                                                                            />
+                                                                            <path
+                                                                                class="st0"
+                                                                                d="M349.7,87.9v-24h7.8c2.9,0,4.9,0.1,5.8,0.4c1.4,0.4,2.5,1.1,3.5,2.4c0.9,1.2,1.4,2.8,1.4,4.7
+                                                                                c0,1.5-0.3,2.7-0.8,3.7c-0.5,1-1.2,1.8-2,2.4c-0.8,0.6-1.7,0.9-2.5,1.1c-1.2,0.2-2.8,0.3-5,0.3h-3.2v9.1H349.7z
+                                                                                M354.5,68v6.8
+                                                                                h2.7c1.9,0,3.2-0.1,3.8-0.4c0.6-0.3,1.1-0.6,1.5-1.2c0.4-0.5,0.5-1.2,0.5-1.9c0-0.9-0.3-1.6-0.8-2.2c-0.5-0.6-1.2-0.9-2-1.1
+                                                                                c-0.6-0.1-1.7-0.2-3.5-0.2H354.5z"
+                                                                                />
+                                                                            </g>
+                                                                            <path
+                                                                                class="st0"
+                                                                                d="M326.1,30.8v7.5c1.9-0.3,12.6-3.4,16.2-9v11.4h3.5c5.8,0,5.5-3.9,5.5-3.9V18h4.9v-4.9h-4.9V8.4h-9v4.7h-16.4
+                                                                                V18h16.3C337.2,27.2,327.7,30.3,326.1,30.8L326.1,30.8z"
+                                                                                />
+                                                                                <path
+                                                                                    class="st0"
+                                                                                    d="M367.8,2.7c-0.2-1.5-1.4-2.7-2.9-2.7h-48.4c-1.7,0-3,1.3-3,3v42.6c0,1.6,1.2,2.8,2.8,2.9h48.9
+                                                                                    c1.5-0.1,2.7-1.3,2.8-2.9L367.8,2.7L367.8,2.7z
+                                                                                    M358.7,43.9h-36.3V4.9h36.3V43.9L358.7,43.9z"
+                                                                                    />
+                                                                                    <path
+                                                                                        class="st0"
+                                                                                        d="M179.5,7.8c0,0,3.4,0.8,6.4,2.1c3.2,1.2,5.9,2.6,6.1,2.7l2.7-6.4c0,0-3.3-2-6.1-2.9c-2.9-1.2-6.4-1.8-6.4-1.8
+                                                                                        l-2.8,6.5l0,0L179.5,7.8L179.5,7.8z
+                                                                                        M111.7,4.2V8h16v11c0,19.6-14.8,21.3-14.8,21.3l0,7.7c0,0,21.1-1.1,23.6-24.8h19.8v18h-10.9
+                                                                                        V46c0,0-0.1,1.9,1.9,1.9c1.6,0,13.1,0,13.1,0c5.1,0,4.9-3.9,4.9-3.9V19.4c0,0,0.1-2.9-3.5-2.9h-25.2V8h33.6V4.2
+                                                                                        c0,0,0.2-1.7-1.7-1.7c-9,0-52.6,0-55.1,0C111.7,2.4,111.7,4.2,111.7,4.2L111.7,4.2z
+                                                                                        M236.5,42.2c0,0-32.8,0.1-34.4,0
+                                                                                        c-6.6-0.2-9.2-4.7-8.9-14.6l0,0c0.1-0.9,0.1-1.7,0.1-2.7v-7.3c0,0,0.3-3-2.6-3c-4.6,0-12.6,0-12.6,0v5.6h6.6v9.3
+                                                                                        c0,9-6.6,10.5-6.6,10.5l0,7.7c0,0,6.4-0.1,10.9-6.3c1.8,3.8,5.4,7,11.4,7.1c2.2,0,26.3,0,33.9,0c2.5,0,2.3-2,2.3-2V42.2
+                                                                                        L236.5,42.2z
+                                                                                        M273,11.2h-15V8.9h15V11.2L273,11.2z
+                                                                                        M273,18.3h-15V16h15V18.3L273,18.3z
+                                                                                        M273,25.3h-15V23h15V25.3L273,25.3z
+                                                                                        M282.1,0.1h-6.7c0,0-2.4,0-2.4,2.2v1.9h-14.8l0-2.6c0,0,0-1.7-2.6-0.8c-1.8,0.6-5.7,2.2-8.3,3.2c-2.3,1-2.2,3.1-2.2,3.1v4.9
+                                                                                        l3.9-1.4v15.9c0,0-0.2,3.5,3,3.5h17.8l0,2.4h-24.8v4.9h13.3c-3.7,3.4-10.4,4.7-13.3,4.9v6.3c1.7,0,15.4-0.1,24.6-11.2h0.2l0,11.2
+                                                                                        h3.5c5.6,0,5.5-3.9,5.5-3.9v-7.3h0.2c9.5,11.4,22.9,11.1,24.6,11.2v-6.4c-2.4-0.1-10-1.2-13.3-4.8h13.3v-4.9h-24.8V30h24.8v-4.7
+                                                                                        h-21.6V23h21.6v-4.7h-21.6V16h21.6v-4.7h-21.6V8.9h21.6V5.8c0,0,0.1-1.6-1.7-1.6c-2,0-19.9,0-19.9,0V0.1L282.1,0.1z
+                                                                                        M221.1,0h-9
+                                                                                        v9.8h-15.5v5.6H212c-0.8,11.9-13.6,15.4-15.4,15.4v6.6c1.6,0.2,13.8-0.8,19.9-10.9c6.2,10.1,18.4,11.1,20,10.9v-6.6
+                                                                                        c-1.8,0-14.6-3.3-15.4-15.4h15.4V9.8h-15.4V0L221.1,0z"
+                                                                                        />
+                                                                                    </g>
+                                                                                    <path
+                                                                                        class="st0"
+                                                                                        d="M80.7,5.1c0-2.4,1.8-4.3,4.1-4.3c2.3,0,4.1,1.8,4.1,4.3c0,2.5-1.8,4.3-4.1,4.3C82.5,9.4,80.7,7.6,80.7,5.1z
+                                                                                        M84.8,10.2c2.8,0,5.1-2.2,5.1-5.1c0-2.9-2.4-5.1-5.1-5.1c-2.8,0-5.1,2.2-5.1,5.1C79.7,8.1,82,10.2,84.8,10.2z
+                                                                                        M83.7,5.5h1l1.5,2.6
+                                                                                        h1l-1.7-2.6c0.9-0.1,1.5-0.6,1.5-1.6c0-1.2-0.7-1.7-2.1-1.7h-2.2v5.9h0.9V5.5z
+                                                                                        M83.7,4.8V2.9h1.2c0.6,0,1.3,0.1,1.3,0.9
+                                                                                        c0,0.9-0.7,1-1.4,1H83.7z"
+                                                                                        />
+                                                                                    </g>
+                                                                                    <line
+                                                                                        class="st1"
+                                                                                        x1="409.8"
+                                                                                        y1="0.1"
+                                                                                        x2="409.8"
+                                                                                        y2="89.4"
+                                                                                        />
+                                                                                    </svg>
+                                                                                    <span class="tit">万达销售物业管理系统</span>
+                </a>
+                <ul class="nav navbar-nav pull-left">
+                    <li class="dropdown">
+                        <a href="#"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false">工作台
+                            <span class="caret"></span></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">发起任务</a>
+                            <a class="dropdown-item" href="#">任务列表</a>
+                            <a class="dropdown-item" href="#">我的发起</a>
+                            <a class="dropdown-item" href="#">我的上传</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false">产品
+                            <span class="caret"></span></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">产品列表</a>
+                            <a class="dropdown-item" href="#">产品上传</a>
+                            <a class="dropdown-item" href="#">产品发布</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false">产品线
+                            <span class="caret"></span></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">填报</a>
+                            <a class="dropdown-item" href="#">审批</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false">知识库
+                            <span class="caret"></span></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">知识上传</a>
+                            <a class="dropdown-item" href="#">知识发布</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">欢迎您，刘超！
+                            <span class="caret"></span></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">退出</a>
+                        </div>
+                    </li>
+                </ul>
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div class="container width1200">
+            <div class="row">
+                <div class="col-xs-3">
+                    <div class="panel  z-depth-1">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                               产品线
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="nav navbar-nav side-nav">
+                                <li  class="active">
+                                    <a href="javascript:;" class="" aria-expanded="true">高层</a>
+                                </li>
+                                <li>
+                                        <a href="javascript:;" class="" aria-expanded="true">洋房</a>
+                                    </li>
+                                    <li>
+                                            <a href="javascript:;" class="" aria-expanded="true">高层</a>
+                                        </li>
+                                        <li>
+                                                <a href="javascript:;" class="" aria-expanded="true">高层</a>
+                                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-9 rightcontent">
+                        <div class="panel  z-depth-1">
+                            <div class="panel-heading" style="border-bottom:0">
+                                <div class="path">
+                                        <span>产品线</span>
+                                        <span>></span>
+                                        <span>高层</span>
+                                        <strong class="pull-right">版本：v3.0</strong>
+                                </div>
+                               
+                            </div>
+                            <div class="panel-body pt0">
+                                   
+                                <table class="table table-bordered table-productline">
+                                    <colgroup>
+                                    <col style="width:10%">
+                                    <col style="width:10%">
+                                    <col >
+                                    <col style="width:13%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>大类</th>
+                                            <th>细类</th>
+                                            <th>打包文件</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tr>
+                                        <td rowspan="2">成果手册</td>
+                                        <td>总图</td>
+                                        <td style="text-align:left;">
+                                            <ul class="nav uploadfiles">
+                                                <li><a class="inlineblock" href="">2018年最新版本总图1.pdf</a><a class="filedelete" href="">x</a></li>
+                                                <li><a class="inlineblock" href="">2018年最新版本总图2.pdf</a><a class="filedelete" href="">x</a></li>
+                                                <li><a class="inlineblock" href="">2018年最新版本总图3.pdf</a><a class="filedelete" href="">x</a></li>
+                                                <li><a class="inlineblock" href="">2018年最新版本总图4.pdf</a><a class="filedelete" href="">x</a></li>
+
+                                        </ul>
+                                    </td>
+                                        <td class="text-center"><a class="btn btn-default btn-sm" href="">长传文件</a></td>
+                                    </tr>
+                                    <tr>
+                                            <td>单体</td>
+                                            <td  style="text-align:left;">
+                                                <ul class="nav uploadfiles">
+                                                        <li><a class="inlineblock" href="">2018年最新版本总图1.pdf</a><a class="filedelete" href="">x</a></li>
+
+                                            </ul>
+                                        </td>
+                                            <td class="text-center"><a class="btn btn-default btn-sm" href="">长传文件</a></td>
+                                        </tr>
+                                </table>
+                            </div>
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+       
+
+                <div class="dealbtn">
+                        <button type="button" class="btn btn-orange btn-sm">提 交</button>
+                        <span style="width:40px;display: inline-block;"></span>
+                        <button type="button" class="btn btn-info  btn-sm">保  存</button>
+                </div>
+        <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+        <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
