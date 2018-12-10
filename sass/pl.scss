@@ -5,16 +5,51 @@ ul{margin:0;padding:0;list-style: none;}
 .mb0{margin-bottom:0px}
 .gray999{color:#999}
 .bl{border-bottom:1px solid #ddd;}
+.bln{border-bottom:0!important;}
 .pt0{padding-top:0px;}
+.mt20{margin-top: 20px;}
+.mt10{margin-top: 10px;}
+.mt30{margin-top: 30px;}
 .mb10{margin-bottom: 10px;}
+.pt20{padding-top:20px}
+.mb20{margin-bottom: 20px!important;}
 .inlineblock{display: inline-block!important;}
 .mb80{margin-bottom: 80px;}
+.mt65{margin-top: 65px;}
+.bl4{border-left:4px solid #005bac}
+.pl10{padding-left: 10px;}
+.pl40{padding-left:40px;}
+.mr15{margin-right: 15px;}
+.ml15{margin-left: 15px;}
+.width100{width:100px;}
+.width40{width:30px;}
+
+.on{font-weight:bold;color:#fff;}
+.bs-docs-footer{
+    background-color:#fff;padding-top:10px;border-top:1px solid #ddd;
+}
 .breadcrumb{padding-top:0px;padding-bottom: 0px;margin-bottom: 10px;margin-top: -10px;}
 .z-depth-0 {
     -webkit-box-shadow: none!important;
     box-shadow: none!important
 }
-.table-edit > tbody >tr >td{border:none;vertical-align: middle!important}
+.table-edit > tbody >tr >td{
+    
+    > .nav-pills{
+        > li {
+            margin-right: 5px;
+            &.active{
+                > a{background-color:#005bac;}
+            }
+            >a{
+
+                padding:5px 15px;background-color:#f2f2f2;}
+        }
+    }
+    border:none;vertical-align: middle!important;
+    &.text-right{color:#666}
+    > input,textarea{max-width: 500px;}
+}
 .z-depth-1 {
     -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12)!important;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12)!important
@@ -73,7 +108,7 @@ ul{margin:0;padding:0;list-style: none;}
     }
     
 }
-.nav li{ 
+.navbar-white> .container> .nav> li{ 
     display: inline-block!important;
     > .dropdown-menu{
         border-top-right-radius: 5px;
@@ -133,6 +168,8 @@ ul{margin:0;padding:0;list-style: none;}
 .side-nav>li>a {
     width: 240px;
     background-color:#f0f6fa;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 .side-nav li a:hover,
@@ -152,7 +189,7 @@ padding: 0;
 display: block;
 padding: 10px 15px 10px 38px;
 text-decoration: none;
-color: #999;
+color: #666;
 }
 
 .side-nav>li>ul>li>a:hover {
@@ -181,6 +218,7 @@ color: #fff;
 }
 
 /****************************产品线上传填报***************************/
+.uploadfiles li {display: inline-block!important;}
 .uploadfiles li:hover{background: #f2f2f2;}
 .uploadfiles .filedelete{visibility: hidden;display: inline;}
 .uploadfiles li:hover{
@@ -196,8 +234,174 @@ color: #fff;
 .btn-orange:hover { color: #fff; background-color: #ce7636; border-color: #ce7636; }
 
 /***********************************************审批页通用样式*************************/
-.navbar-black{background-color:#005bac;color:#fff;border-radius: 0px; }
-.tableinfo .text-right{color:#999;}
+.navbar-black{
+    background-color:#005bac;color:#fff;border-radius: 0px;
+ }
+.tableinfo .text-right{color:#666;}
 .tableinfo >tbody > tr >td{
     border-top:0px;
+}
+
+/***********************************************填报页样式*************************/
+
+
+.marks{
+    > li{
+        &.bad{
+            >.mark{
+                background-color: #FF0000;
+            }
+        }
+        &.nice{
+            >.mark{
+                background-color: #009966;
+            }
+
+        }
+        cursor: pointer;
+        float:left;margin:5px;
+        > .mark{
+            width:50px;
+            height:50px;
+            text-align: center;
+            background-color:#ddd;
+            > img{position: relative;top:10px;width: 25px;}
+           
+        }
+        > .mark-tit{
+            line-height: 30px;
+            color:#666;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+}
+.img1-thumbnail{
+    position: relative;
+    width: 100px;height: 100px;
+    display: inline-block;margin-right: 10px;
+    > img{width:100px;}
+    > .btn-delete{
+        position: absolute;
+        left:58px;
+    }
+}
+.uploadbg{
+    > input{
+        width:99px;height: 99px;opacity: 0;
+        -ms-filter: 'alpha(opacity=0)';
+        cursor: pointer;
+    }
+    width: 100px;height: 100px;
+    background-image: url(../images/upload.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+/***************************************forms****************************/
+.open .btn-primary.dropdown-toggle:focus{
+
+    background-color:#005bac;
+    border:1px solid lighten($color: #005bac, $amount: 5%);
+}
+.btn-primary{
+    background-color:#005bac;
+    border:1px solid darken($color: #005bac, $amount: 5%);
+    &:hover,&:focus{
+        background-color: lighten($color: #005bac, $amount: 10%);
+        border:1px solid lighten($color: #005bac, $amount: 5%);
+    }
+}
+// 产品列表
+.thumbnail{border:2px solid transparent;
+    cursor: pointer;
+    &:hover{border:2px solid #999;}
+}
+//产品详情
+
+.product-detail> .navbar-nav{
+    > li {
+        &:hover {
+            background-color: none;
+            > a{
+                color:#005bac;
+                font-size: 16px;
+            }
+        }
+        > a{color:#f2f2f2;font-size: 16px;}
+    }
+
+}
+.imgcontainer{
+    margin-top: 30px;
+    > img{margin:auto;border:1px solid #ddd;width:700px;}
+}
+.actions{
+
+    margin-top: 10px;
+    width: 700px;
+    > a{margin-right: 5px}
+}
+.comment{
+    margin-top:20px;
+    padding:20px;
+    padding-top:10px; 
+    width: 700px;
+    background-color: #f2f2f2;
+}
+.relatedexplain{
+    color:#666;
+    line-height: 26px;
+}
+.badthumbnail{
+    width:30px;
+    height: 18px;
+    background-color: #FF0000;
+    display: inline-block;
+    margin-right: 10px;
+}
+.nicethumbnail{
+    width:30px;
+    height: 18px;
+    background-color: #009966;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.thum {
+    width:100%;
+    > .thum-tit{
+        margin-right: 30px;
+    display: inline;
+    line-height: 22px;
+        position: relative;
+        top:-3px;
+    }
+    padding-bottom:10px;
+    padding-top:10px;
+    margin-top: 30px;
+}
+.detail-tit{
+    padding-bottom:20px;padding-top:40px;
+}
+.product-detail{
+    > .nav{
+        > li {
+            &.on{
+                > a{
+                    font-weight: bold;
+                    color:#fff;
+                }
+            }
+            &:hover,&:focus{
+                >a{
+                    background-color:transparent;
+                    color:#fff;
+                }
+                
+            }
+            >a{
+                color:lighten(#005bac,50%)
+            }
+        }
+    }
 }

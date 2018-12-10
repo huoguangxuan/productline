@@ -26,12 +26,36 @@ ul {
   border-bottom: 1px solid #ddd;
 }
 
+.bln {
+  border-bottom: 0 !important;
+}
+
 .pt0 {
   padding-top: 0px;
 }
 
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
 .mb10 {
   margin-bottom: 10px;
+}
+
+.pt20 {
+  padding-top: 20px;
+}
+
+.mb20 {
+  margin-bottom: 20px !important;
 }
 
 .inlineblock {
@@ -40,6 +64,49 @@ ul {
 
 .mb80 {
   margin-bottom: 80px;
+}
+
+.mt65 {
+  margin-top: 65px;
+}
+
+.bl4 {
+  border-left: 4px solid #005bac;
+}
+
+.pl10 {
+  padding-left: 10px;
+}
+
+.pl40 {
+  padding-left: 40px;
+}
+
+.mr15 {
+  margin-right: 15px;
+}
+
+.ml15 {
+  margin-left: 15px;
+}
+
+.width100 {
+  width: 100px;
+}
+
+.width40 {
+  width: 30px;
+}
+
+.on {
+  font-weight: bold;
+  color: #fff;
+}
+
+.bs-docs-footer {
+  background-color: #fff;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
 }
 
 .breadcrumb {
@@ -57,6 +124,22 @@ ul {
 .table-edit > tbody > tr > td {
   border: none;
   vertical-align: middle !important;
+}
+.table-edit > tbody > tr > td > .nav-pills > li {
+  margin-right: 5px;
+}
+.table-edit > tbody > tr > td > .nav-pills > li.active > a {
+  background-color: #005bac;
+}
+.table-edit > tbody > tr > td > .nav-pills > li > a {
+  padding: 5px 15px;
+  background-color: #f2f2f2;
+}
+.table-edit > tbody > tr > td.text-right {
+  color: #666;
+}
+.table-edit > tbody > tr > td > input, .table-edit > tbody > tr > td textarea {
+  max-width: 500px;
 }
 
 .z-depth-1 {
@@ -129,20 +212,20 @@ ul {
   color: #333;
 }
 
-.nav li {
+.navbar-white > .container > .nav > li {
   display: inline-block !important;
 }
-.nav li > .dropdown-menu {
+.navbar-white > .container > .nav > li > .dropdown-menu {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
-.nav li > .dropdown-menu > .dropdown-item {
+.navbar-white > .container > .nav > li > .dropdown-menu > .dropdown-item {
   display: block;
   text-decoration: none;
   padding: 6px 12px;
   color: #666;
 }
-.nav li > .dropdown-menu > .dropdown-item:hover, .nav li > .dropdown-menu > .dropdown-item:active, .nav li > .dropdown-menu > .dropdown-item.active, .nav li > .dropdown-menu > .dropdown-item:focus {
+.navbar-white > .container > .nav > li > .dropdown-menu > .dropdown-item:hover, .navbar-white > .container > .nav > li > .dropdown-menu > .dropdown-item:active, .navbar-white > .container > .nav > li > .dropdown-menu > .dropdown-item.active, .navbar-white > .container > .nav > li > .dropdown-menu > .dropdown-item:focus {
   color: #333;
 }
 
@@ -195,6 +278,8 @@ ul {
 .side-nav > li > a {
   width: 240px;
   background-color: #f0f6fa;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .side-nav li a:hover,
@@ -213,7 +298,7 @@ ul {
   display: block;
   padding: 10px 15px 10px 38px;
   text-decoration: none;
-  color: #999;
+  color: #666;
 }
 
 .side-nav > li > ul > li > a:hover {
@@ -246,6 +331,10 @@ ul {
 }
 
 /****************************产品线上传填报***************************/
+.uploadfiles li {
+  display: inline-block !important;
+}
+
 .uploadfiles li:hover {
   background: #f2f2f2;
 }
@@ -302,9 +391,182 @@ ul {
 }
 
 .tableinfo .text-right {
-  color: #999;
+  color: #666;
 }
 
 .tableinfo > tbody > tr > td {
   border-top: 0px;
+}
+
+/***********************************************填报页样式*************************/
+.marks > li {
+  cursor: pointer;
+  float: left;
+  margin: 5px;
+}
+.marks > li.bad > .mark {
+  background-color: #FF0000;
+}
+.marks > li.nice > .mark {
+  background-color: #009966;
+}
+.marks > li > .mark {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: #ddd;
+}
+.marks > li > .mark > img {
+  position: relative;
+  top: 10px;
+  width: 25px;
+}
+.marks > li > .mark-tit {
+  line-height: 30px;
+  color: #666;
+  font-size: 12px;
+  text-align: center;
+}
+
+.img1-thumbnail {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.img1-thumbnail > img {
+  width: 100px;
+}
+.img1-thumbnail > .btn-delete {
+  position: absolute;
+  left: 58px;
+}
+
+.uploadbg {
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/upload.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.uploadbg > input {
+  width: 99px;
+  height: 99px;
+  opacity: 0;
+  -ms-filter: 'alpha(opacity=0)';
+  cursor: pointer;
+}
+
+/***************************************forms****************************/
+.open .btn-primary.dropdown-toggle:focus {
+  background-color: #005bac;
+  border: 1px solid #0068c6;
+}
+
+.btn-primary {
+  background-color: #005bac;
+  border: 1px solid #004e93;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #0076df;
+  border: 1px solid #0068c6;
+}
+
+.thumbnail {
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.thumbnail:hover {
+  border: 2px solid #999;
+}
+
+.product-detail > .navbar-nav > li:hover {
+  background-color: none;
+}
+.product-detail > .navbar-nav > li:hover > a {
+  color: #005bac;
+  font-size: 16px;
+}
+.product-detail > .navbar-nav > li > a {
+  color: #f2f2f2;
+  font-size: 16px;
+}
+
+.imgcontainer {
+  margin-top: 30px;
+}
+.imgcontainer > img {
+  margin: auto;
+  border: 1px solid #ddd;
+  width: 700px;
+}
+
+.actions {
+  margin-top: 10px;
+  width: 700px;
+}
+.actions > a {
+  margin-right: 5px;
+}
+
+.comment {
+  margin-top: 20px;
+  padding: 20px;
+  padding-top: 10px;
+  width: 700px;
+  background-color: #f2f2f2;
+}
+
+.relatedexplain {
+  color: #666;
+  line-height: 26px;
+}
+
+.badthumbnail {
+  width: 30px;
+  height: 18px;
+  background-color: #FF0000;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nicethumbnail {
+  width: 30px;
+  height: 18px;
+  background-color: #009966;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.thum {
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 30px;
+}
+.thum > .thum-tit {
+  margin-right: 30px;
+  display: inline;
+  line-height: 22px;
+  position: relative;
+  top: -3px;
+}
+
+.detail-tit {
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+
+.product-detail > .nav > li.on > a {
+  font-weight: bold;
+  color: #fff;
+}
+.product-detail > .nav > li:hover > a, .product-detail > .nav > li:focus > a {
+  background-color: transparent;
+  color: #fff;
+}
+.product-detail > .nav > li > a {
+  color: #acd8ff;
 }
