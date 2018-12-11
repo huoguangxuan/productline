@@ -402,7 +402,7 @@ ul {
 .marks > li {
   cursor: pointer;
   float: left;
-  margin: 5px;
+  padding: 4px;
 }
 .marks > li.bad > .mark {
   background-color: #FF0000;
@@ -411,15 +411,15 @@ ul {
   background-color: #009966;
 }
 .marks > li > .mark {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
   text-align: center;
-  background-color: #ddd;
+  background-color: #8b8c8f;
 }
 .marks > li > .mark > img {
-  position: relative;
-  top: 10px;
-  width: 25px;
+  width: 50px;
+  margin-top: 2px;
 }
 .marks > li > .mark-tit {
   line-height: 30px;
