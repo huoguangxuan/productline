@@ -441,6 +441,7 @@ ul {
 .img1-thumbnail > .btn-delete {
   position: absolute;
   left: 58px;
+  top: 0px;
 }
 
 .uploadbg {
