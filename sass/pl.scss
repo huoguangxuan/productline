@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /***************************公共样式******************************/
 body{background-color: #f2f2f2;}
 ul{margin:0;padding:0;list-style: none;}
@@ -23,7 +24,7 @@ ul{margin:0;padding:0;list-style: none;}
 .ml15{margin-left: 15px;}
 .width100{width:100px;}
 .width40{width:30px;}
-
+.minwidth1200{min-width: 1200px;}
 .on{font-weight:bold;color:#fff;}
 .bs-docs-footer{
     background-color:#fff;padding-top:10px;border-top:1px solid #ddd;
@@ -315,9 +316,22 @@ color: #fff;
     }
 }
 // 产品列表
-.thumbnail{border:2px solid transparent;
+.thumbnail{border:1px solid #ddd;
+    > .caption{
+        > p {
+            color:#666
+        }
+    }
     cursor: pointer;
-    &:hover{border:2px solid #999;}
+    background-color: #fbfbfb;
+    &:hover{border:1px solid #999;
+        
+    }
+}
+.table-search > tbody{
+    >tr{
+        border-bottom: 1px solid #f2f2f2;
+    }
 }
 //产品详情
 
@@ -336,19 +350,19 @@ color: #fff;
 }
 .imgcontainer{
     margin-top: 30px;
-    > img{margin:auto;border:1px solid #ddd;width:700px;}
+    > img{margin:auto;border:1px solid #ddd;min-width:700px;width:100%}
 }
 .actions{
 
     margin-top: 10px;
-    width: 700px;
+    min-width: 700px;
     > a{margin-right: 5px}
 }
 .comment{
     margin-top:20px;
     padding:20px;
     padding-top:10px; 
-    width: 700px;
+    min-width: 700px;
     background-color: #f2f2f2;
 }
 .relatedexplain{

@@ -98,6 +98,10 @@ ul {
   width: 30px;
 }
 
+.minwidth1200 {
+  min-width: 1200px;
+}
+
 .on {
   font-weight: bold;
   color: #fff;
@@ -475,11 +479,19 @@ ul {
 }
 
 .thumbnail {
-  border: 2px solid transparent;
+  border: 1px solid #ddd;
   cursor: pointer;
+  background-color: #fbfbfb;
+}
+.thumbnail > .caption > p {
+  color: #666;
 }
 .thumbnail:hover {
-  border: 2px solid #999;
+  border: 1px solid #999;
+}
+
+.table-search > tbody > tr {
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .product-detail > .navbar-nav > li:hover {
@@ -500,12 +512,13 @@ ul {
 .imgcontainer > img {
   margin: auto;
   border: 1px solid #ddd;
-  width: 700px;
+  min-width: 700px;
+  width: 100%;
 }
 
 .actions {
   margin-top: 10px;
-  width: 700px;
+  min-width: 700px;
 }
 .actions > a {
   margin-right: 5px;
@@ -515,7 +528,7 @@ ul {
   margin-top: 20px;
   padding: 20px;
   padding-top: 10px;
-  width: 700px;
+  min-width: 700px;
   background-color: #f2f2f2;
 }
 
