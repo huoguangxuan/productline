@@ -274,6 +274,29 @@ ul {
 .side-nav > li {
   margin-bottom: 2px;
 }
+.side-nav > li > ul.submenu > li:hover > a, .side-nav > li > ul.submenu > li:active > a, .side-nav > li > ul.submenu > li:focus > a {
+  background-color: #cfebfd;
+}
+.side-nav > li > ul.submenu > li > a {
+  background-color: #f0f6fa;
+  color: #337ab7;
+}
+.side-nav > li > ul.submenu > li.active a {
+  background-color: #cfebfd;
+}
+.side-nav > li.active > ul.submenu > li:hover > a, .side-nav > li.active > ul.submenu > li:active > a, .side-nav > li.active > ul.submenu > li:focus > a {
+  background-color: #cfebfd;
+}
+.side-nav > li.active > ul.submenu > li > a {
+  background-color: #f0f6fa;
+  color: #337ab7;
+}
+.side-nav > li.active > ul.submenu > li.active a {
+  background-color: #cfebfd;
+}
+.side-nav > li.active > a {
+  background-color: #005bac;
+}
 
 .side-nav > li > a {
   width: 240px;

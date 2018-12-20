@@ -163,7 +163,50 @@ ul{margin:0;padding:0;list-style: none;}
     overflow-x: hidden;
 }
 .side-nav>li{
-    margin-bottom:2px
+    margin-bottom:2px;
+    > ul.submenu{
+        > li{
+            &:hover,&:active,&:focus{
+                >a{
+                    background-color: lighten($color: #169ef4, $amount: 38%);
+                
+                }
+            }
+            >a{
+                background-color: #f0f6fa;
+                color:#337ab7;
+            }
+        }
+        >li.active{
+            a{
+                background-color: lighten($color: #169ef4, $amount: 38%);
+            }
+        }
+    }
+    &.active{
+        > ul.submenu{
+            > li{
+                &:hover,&:active,&:focus{
+                    >a{
+                        background-color: lighten($color: #169ef4, $amount: 38%);
+                    
+                    }
+                }
+                >a{
+                    background-color: #f0f6fa;
+                    color:#337ab7;
+                }
+            }
+            >li.active{
+                a{
+                    background-color: lighten($color: #169ef4, $amount: 38%);
+                }
+            }
+        }
+        > a{
+            background-color: #005bac;
+        }
+    }
 }
 .side-nav>li>a {
     width: 240px;
