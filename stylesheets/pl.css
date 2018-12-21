@@ -98,6 +98,18 @@ ul {
   width: 30px;
 }
 
+.font18 {
+  font-size: 18px;
+}
+
+.grayccc {
+  color: #ccc;
+}
+
+.badge {
+  background-color: #d9534f;
+}
+
 .on {
   font-weight: bold;
   color: #fff;
@@ -173,6 +185,48 @@ ul {
 }
 
 /********************************head样式**********************************/
+.input-group-addon {
+  padding: 0px;
+}
+.input-group-addon:hover, .input-group-addon:active, .input-group-addon:focus {
+  background-color: #ddd;
+  cursor: pointer;
+}
+.input-group-addon:hover > .mainsearch > i, .input-group-addon:active > .mainsearch > i, .input-group-addon:focus > .mainsearch > i {
+  color: #333;
+}
+.input-group-addon > a {
+  padding: 0px 20px;
+}
+
+.topmenu > li.divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.topmenu > li:hover > a, .topmenu > li:focus > a {
+  background-color: #f2f2f2;
+}
+.topmenu > li:hover > a > i, .topmenu > li:focus > a > i {
+  color: #666;
+}
+.topmenu > li.active > a {
+  background-color: #ddd;
+}
+.topmenu > li.active > a > i {
+  color: #0066B2;
+}
+.topmenu > li a {
+  color: #666;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+.topmenu > li a > i {
+  margin-right: 18px;
+}
+
 .st1 {
   fill: none;
   stroke: #0066B2;
@@ -185,14 +239,14 @@ ul {
 }
 
 .navbar-brand {
-  padding-top: 10px;
+  padding-top: 15px;
   padding-right: 30px;
 }
 .navbar-brand > .tit {
   position: relative;
   top: -11px;
   padding-left: 5px;
-  color: #0066b2;
+  color: #333;
   font-size: 16px;
   font-weight: 500;
 }
@@ -272,45 +326,41 @@ ul {
 }
 
 .side-nav > li {
-  margin-bottom: 2px;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
 }
-.side-nav > li > ul.submenu > li:hover > a, .side-nav > li > ul.submenu > li:active > a, .side-nav > li > ul.submenu > li:focus > a {
-  background-color: #cfebfd;
+.side-nav > li > a {
+  color: #333;
+  font-weight: 700;
+}
+.side-nav > li.active > ul.submenu > li:hover > a, .side-nav > li.active > ul.submenu > li:active > a, .side-nav > li.active > ul.submenu > li:focus > a, .side-nav > li.active > ul.submenu > li.active > a, .side-nav > li:hover > ul.submenu > li:hover > a, .side-nav > li:hover > ul.submenu > li:active > a, .side-nav > li:hover > ul.submenu > li:focus > a, .side-nav > li:hover > ul.submenu > li.active > a, .side-nav > li:active > ul.submenu > li:hover > a, .side-nav > li:active > ul.submenu > li:active > a, .side-nav > li:active > ul.submenu > li:focus > a, .side-nav > li:active > ul.submenu > li.active > a, .side-nav > li:focus > ul.submenu > li:hover > a, .side-nav > li:focus > ul.submenu > li:active > a, .side-nav > li:focus > ul.submenu > li:focus > a, .side-nav > li:focus > ul.submenu > li.active > a {
+  color: #005bac;
+}
+.side-nav > li.active > ul.submenu > li > a, .side-nav > li:hover > ul.submenu > li > a, .side-nav > li:active > ul.submenu > li > a, .side-nav > li:focus > ul.submenu > li > a {
+  color: #666;
+  background-color: #fff;
+}
+.side-nav > li.active > a, .side-nav > li:hover > a, .side-nav > li:active > a, .side-nav > li:focus > a {
+  background-color: #fff;
+  color: #005bac;
+}
+.side-nav > li > ul.submenu > li:hover > a, .side-nav > li > ul.submenu > li:active > a, .side-nav > li > ul.submenu > li:focus > a, .side-nav > li > ul.submenu > li.active > a {
+  color: #005bac;
+  background-color: #f0f6fa;
 }
 .side-nav > li > ul.submenu > li > a {
-  background-color: #f0f6fa;
-  color: #337ab7;
+  background-color: #fff;
+  color: #666;
 }
 .side-nav > li > ul.submenu > li.active a {
-  background-color: #cfebfd;
-}
-.side-nav > li.active > ul.submenu > li:hover > a, .side-nav > li.active > ul.submenu > li:active > a, .side-nav > li.active > ul.submenu > li:focus > a {
-  background-color: #cfebfd;
-}
-.side-nav > li.active > ul.submenu > li > a {
   background-color: #f0f6fa;
-  color: #337ab7;
-}
-.side-nav > li.active > ul.submenu > li.active a {
-  background-color: #cfebfd;
-}
-.side-nav > li.active > a {
-  background-color: #005bac;
+  color: #005bac;
 }
 
 .side-nav > li > a {
   width: 240px;
-  background-color: #f0f6fa;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.side-nav li a:hover,
-.side-nav li a:focus,
-.side-nav li.active a {
-  outline: none;
-  background-color: #169ef4;
-  color: #fff;
 }
 
 .side-nav > li > ul {
@@ -322,10 +372,6 @@ ul {
   padding: 10px 15px 10px 38px;
   text-decoration: none;
   color: #666;
-}
-
-.side-nav > li > ul > li > a:hover {
-  color: #fff;
 }
 
 /****************************产品线列表***************************/
@@ -354,6 +400,40 @@ ul {
 }
 
 /****************************产品线上传填报***************************/
+.pl-sidebar {
+  margin-top: 20px;
+}
+.pl-sidebar > .panel-body > .pls {
+  min-height: 300px;
+}
+.pl-sidebar > .panel-body > .pls > li {
+  padding-left: 20px;
+}
+.pl-sidebar > .panel-body > .pls > li.active, .pl-sidebar > .panel-body > .pls > li:hover, .pl-sidebar > .panel-body > .pls > li:focus, .pl-sidebar > .panel-body > .pls > li:active {
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+.pl-sidebar > .panel-body > .pls > li.active > a, .pl-sidebar > .panel-body > .pls > li:hover > a, .pl-sidebar > .panel-body > .pls > li:focus > a, .pl-sidebar > .panel-body > .pls > li:active > a {
+  color: #005bac;
+}
+.pl-sidebar > .panel-body > .pls > li > a {
+  line-height: 45px;
+  text-decoration: none;
+  color: #333;
+}
+.pl-sidebar > .panel-body > .pls > li > a > img {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.pl-sidebar > .panel-heading {
+  background-color: #169ef4;
+  margin: -20px 15px 0;
+  color: #fff;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
 .uploadfiles li {
   display: inline-block !important;
 }
@@ -449,6 +529,13 @@ ul {
   color: #666;
   font-size: 12px;
   text-align: center;
+}
+
+.thumbnail > .caption > h3 {
+  font-size: 18px;
+}
+.thumbnail > img {
+  border: 1px solid #ddd;
 }
 
 .img1-thumbnail {
@@ -593,4 +680,13 @@ ul {
 }
 .product-detail > .nav > li > a {
   color: #acd8ff;
+}
+
+.knowledge > li a {
+  color: #666;
+  padding: 8px 0px;
+  text-decoration: none;
+}
+.knowledge > li a > i {
+  margin-right: 5px;
 }

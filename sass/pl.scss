@@ -23,7 +23,11 @@ ul{margin:0;padding:0;list-style: none;}
 .ml15{margin-left: 15px;}
 .width100{width:100px;}
 .width40{width:30px;}
-
+.font18{font-size:18px;}
+.grayccc{color:#ccc}
+.badge{
+    background-color: #d9534f;
+}
 .on{font-weight:bold;color:#fff;}
 .bs-docs-footer{
     background-color:#fff;padding-top:10px;border-top:1px solid #ddd;
@@ -81,15 +85,62 @@ ul{margin:0;padding:0;list-style: none;}
 }
 
 /********************************head样式**********************************/
+.input-group-addon{padding:0px;
+    &:hover,&:active,&:focus{
+        background-color: #ddd;
+        cursor: pointer;
+        >.mainsearch{
+            > i{
+                color:#333
+        }}
+    }
+> a{
+    padding:0px 20px;
+}}
+.topmenu{
+    > li {
+        &.divider{
+            height: 1px;
+            margin: 9px 0;
+            overflow: hidden;
+            background-color: #e5e5e5;
+        }
+        &:hover,&:focus{
+            >a {
+                >i{
+                    color:#666
+                }
+                background-color: #f2f2f2;
+            }
+        }
+        &.active{
+            >a {
+                > i{
+                    color:#0066B2;
+                }
+                background-color: #ddd;
+            }
+        }
+        a{
+            color:#666;
+            text-decoration: none;
+            > i {
+                margin-right: 18px;
+            }
+            padding:15px ;
+            display: block;
+        }
+    }
+}
 .st1{fill:none;stroke:#0066B2;stroke-width:1.0042;stroke-miterlimit:10;}
 .st0{fill:#0066B2;}
 .navbar-brand{
-    padding-top: 10px;padding-right: 30px;
+    padding-top: 15px;padding-right: 30px;
     > .tit{
         position: relative;
         top:-11px;
         padding-left:5px;
-        color:#0066b2;
+        color:#333;
         font-size: 16px;
         font-weight: 500;
     }
@@ -163,65 +214,59 @@ ul{margin:0;padding:0;list-style: none;}
     overflow-x: hidden;
 }
 .side-nav>li{
-    margin-bottom:2px;
-    > ul.submenu{
-        > li{
-            &:hover,&:active,&:focus{
-                >a{
-                    background-color: lighten($color: #169ef4, $amount: 38%);
-                
-                }
-            }
-            >a{
-                background-color: #f0f6fa;
-                color:#337ab7;
-            }
-        }
-        >li.active{
-            a{
-                background-color: lighten($color: #169ef4, $amount: 38%);
-            }
-        }
+    margin-bottom:5px;
+    border:1px solid  #ddd ;
+    > a{
+        color:#333;
+        font-weight: 700;
     }
-    &.active{
+    &.active,&:hover,&:active,&:focus{
+        
         > ul.submenu{
             > li{
-                &:hover,&:active,&:focus{
+                &:hover,&:active,&:focus,&.active{
                     >a{
-                        background-color: lighten($color: #169ef4, $amount: 38%);
-                    
+                        color:#005bac;
                     }
                 }
                 >a{
-                    background-color: #f0f6fa;
-                    color:#337ab7;
-                }
-            }
-            >li.active{
-                a{
-                    background-color: lighten($color: #169ef4, $amount: 38%);
+                    color:#666;
+                   background-color: #fff;
                 }
             }
         }
         > a{
-            background-color: #005bac;
+            background-color: #fff;
+            color:#005bac;
         }
     }
+    > ul.submenu{
+        > li{
+            &:hover,&:active,&:focus,&.active{
+                >a{
+                   color:#005bac;
+                   background-color: #f0f6fa;
+                }
+            }
+            >a{
+                background-color: #fff;
+                color:#666;
+                
+            }
+        }
+        >li.active{
+            a{
+                background-color: #f0f6fa;
+                color:#005bac;
+            }
+        }
+    }
+    
 }
 .side-nav>li>a {
     width: 240px;
-    background-color:#f0f6fa;
     padding-top:10px;
     padding-bottom:10px;
-}
-
-.side-nav li a:hover,
-.side-nav li a:focus,
-
-.side-nav li.active a {
-    outline: none;
-    background-color: #169ef4;
-    color:#fff;
 }
 
 .side-nav>li>ul {
@@ -235,9 +280,6 @@ text-decoration: none;
 color: #666;
 }
 
-.side-nav>li>ul>li>a:hover {
-color: #fff;
-}
 
 /****************************产品线列表***************************/
 .table-productline> tbody>tr >td,.table-productline> thead>tr >th{
@@ -261,6 +303,39 @@ color: #fff;
 }
 
 /****************************产品线上传填报***************************/
+.pl-sidebar {
+    margin-top:20px;
+    > .panel-body{
+        >.pls{
+            min-height: 300px;
+            >li{
+                padding-left: 20px;
+                &.active,&:hover,&:focus,&:active{
+                    background-color: #eeeeee;
+                    cursor: pointer;
+                    > a{
+                        color:#005bac;
+                    }
+                }
+                > a{
+                    line-height: 45px;
+                    > img{
+                        width:20px;
+                        vertical-align: middle;
+                        margin-right: 15px;
+                    }
+                    text-decoration: none;
+                    color:#333;
+                }
+            }
+        }
+    }
+    > .panel-heading {
+        background-color:#169ef4;margin:-20px 15px 0;color:#fff;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+}
 .uploadfiles li {display: inline-block!important;}
 .uploadfiles li:hover{background: #f2f2f2;}
 .uploadfiles .filedelete{visibility: hidden;display: inline;}
@@ -319,6 +394,18 @@ color: #fff;
             font-size: 12px;
             text-align: center;
         }
+    }
+}
+.thumbnail{
+    > .caption{
+        > h3{
+            font-size: 18px;
+        }
+        
+    }
+    
+    > img{
+        border:1px solid #ddd;
     }
 }
 .img1-thumbnail{
@@ -448,6 +535,18 @@ color: #fff;
             >a{
                 color:lighten(#005bac,50%)
             }
+        }
+    }
+}
+.knowledge{
+    >li{
+        a{
+            > i{
+                margin-right:5px;
+            }
+            color:#666;
+            padding:8px 0px;
+            text-decoration: none
         }
     }
 }
