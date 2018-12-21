@@ -690,3 +690,71 @@ ul {
 .knowledge > li a > i {
   margin-right: 5px;
 }
+
+.tuijian > .col-xs-4 {
+  padding-right: 0px;
+}
+
+#topsearchinput {
+  min-width: 400px;
+  position: relative;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.textoverflow220 {
+  display: inline-block;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.search-drop {
+  position: absolute;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  width: 400px;
+  left: 0;
+  top: 34px;
+}
+.search-drop > .droplist {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.search-drop > .droplist > li {
+  padding: 10px 0;
+}
+.search-drop > .droplist > li:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.parentCls {
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.inputElem {
+  min-width: 400px;
+}
+
+.parentCls ul {
+  background: #fff;
+}
+
+.auto-tip li {
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.auto-tip li.hoverBg {
+  background: #ddd;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
