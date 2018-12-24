@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+<script>
+    var NumFormat = function (num) {
+    if (num == null || !num) {
+        num = 0;
+    }
+    return Number(num).toFixed(2)
+    var res = Number(num).toFixed(2).replace(/\d+/, function (n) { // 先提取整数部分
+        return n.replace(/(\d)(?=(\d{3})+$)/g, function ($1) {
+            return $1 + ",";
+        });
+    })
+
+    return res;
+}
+    var Convert = function (amtStr) {
+    var a, renum = '';
+    var j = 0;
+    var a1 = '', a2 = '', a3 = '';
+    var tes = /^-/;
+    a = amtStr.replace(/,/g, "");
+    a = a.replace(/[^-\.,0-9]/g, ""); //删除无效字符
+    a = a.replace(/(^\s*)|(\s*$)/g, ""); //trim
+    if (tes.test(a)) a1 = '-';
+    else a1 = '';
+    a = a.replace(/-/g, "");
+    if (a != "0" && a.substr(0, 2) != "0.") a = a.replace(/^0*/g, "");
+    j = a.indexOf('.'); if (j < 0) j = a.length; a2 = a.substr(0, j); a3 = a.substr(j); j = 0;
+    for (i = a2.length; i > 3; i = i - 3) {
+        renum = "," + a2.substr(i - 3, 3) + renum;
+        j++;
+    }
+    renum = a1 + a2.substr(0, a2.length - j * 3) + renum + a3;
+
+    return renum;
+}
+console.log(Convert(2879100))
+</script>    
+</body>
+
+</html>

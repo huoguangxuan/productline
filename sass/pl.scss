@@ -344,7 +344,7 @@ color: #666;
 }
 
 /***********************************************保存/提交的样式*************************/
-.dealbtn { padding: 10px; background-color: #575f61; position: fixed; bottom: 0; width: 100%; text-align: center; }
+.dealbtn { padding: 5px; background-color: #575f61; position: fixed; bottom: 0; width: 100%; text-align: center; }
 
 .dealbtn .btn { border-radius: 4px; padding-left: 30px; padding-right: 30px; font-size: 16px; }
 .btn-orange { color: #fff; background-color: #D8925F; border-color: #D8925F; }
@@ -551,9 +551,12 @@ color: #666;
     }
 }
 .tuijian {
-    > .col-xs-4{
-        padding-right:0px;
-    }
+    > .row{
+        .col-xs-4{
+            padding-right:0px;
+        }
+    } 
+    > .col-xs-3{padding-right:0px;}
 }
 // Mixin
 @mixin text-overflow() {
@@ -596,4 +599,73 @@ color: #666;
 
 .hidden {
 	display:none;
+}
+.search-row{padding-bottom:5px;margin-bottom: 7px;}
+.search-value {
+    > .s-tit{padding:12px 0px;color:#666;}
+    > ul{
+        list-style: none;
+    }
+    > .nav-pills{
+        margin-bottom: 30px;
+        > li {
+            padding-top: 9px;
+            cursor: pointer;
+            &.active,&:hover,&:focus,&:active{
+                background-color: #ddd;
+                > a{
+                    background-color: transparent;
+                    color:#005bac;
+                    font-weight: 600;
+                }
+            }
+            width:80px;
+            text-align: center;
+            height: 80px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin-right: 20px;
+            > a{
+                &:active,&:focus,&:hover{
+                    background-color: transparent;
+                    color:#005bac;
+                    font-weight: 600;
+                }
+                color:#666;
+                text-decoration: none;
+            }
+            > p{
+                > img{
+                    width: 30px;
+                }
+            }
+        }
+    }
+    > .pills{
+        padding:0;margin:0;
+        > li{
+            text-align: left;
+            margin-right:5px;
+            
+            > a{
+                color:#666;text-decoration: none;
+                padding:7px 0px;
+                display: inline-block; 
+                font-weight: 500;
+                font-size: 14px;
+                &:focus,&:active{
+                    font-weight: 600;
+                    color:#005bac;
+                }
+            }
+            &:hover,&.active,&:focus,&:active{
+                > a{
+                    color:#005bac;
+                    font-weight: 600;
+                    
+                }
+            }
+        }
+        
+    }
 }
