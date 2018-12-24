@@ -227,7 +227,7 @@
         <div class="container width1200">
             <div class="row">
                 <div class="col-xs-3">
-                    <div class="panel mt20  z-depth-1">
+                    <div class="panel mt20">
                         <div class="panel-heading bln clearfix">
                             <h3 class="panel-title">
                                <!-- Single button -->
@@ -275,12 +275,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-9 rightcontent">
-                        <div class="panel  z-depth-1">
+                <div class="col-xs-9 rightcontent" style="padding-left:0px;">
+                        <div class="panel ">
                             <div class="panel-heading">
-                                <h3 class="panel-title">
-                                    <span style="line-height:34px">产品列表</span>
-                                    <div class="btn-group pull-right mb10">
+                                <h3 class="panel-title clearfix">
+                                        <a  role="button" style="text-decoration:none;color:#333;display: inline;line-height: 30px;" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <img src="images/导调控制.png" style="width:20px;margin-right:8px;" alt="">
+                                                产品过滤
+                                        </a>
+                                    <div class="btn-group pull-right">
                                             <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                               版本：v2.0 <span class="caret"></span>
                                             </button>
@@ -288,165 +291,173 @@
                                               <a  class="dropdown-item" href="#"> 版本：v1.0</a>
                                               <a  class="dropdown-item" href="#"> 版本：v2.0</a>
                                             </div>
-                                          </div>
+                                    </div>
+                                    <div class="clearfix pull-right" style="min-width:390px;display: inline-block;margin-right: 255px;">
+                                            <button class="btn btn-primary btn-sm pull-right" type="button"><i class="glyphicon glyphicon-search"></i> 搜索</button>
+                                            <input type="text" class="form-control inlineblock  input-sm pull-right"  style="width:300px;" placeholder="西安高新万达广场 / 抚顺万达广场">
+                                    </div>
+                                    
                                 </h3>
                                
                             </div>
-                            <div class="panel-body">
-                                    <table class="table table-edit">
-                                            <colgroup>
-                                                <col style="width:15%">
-                                                <col >
-                                            </colgroup>
-                                             
-                                                <tr>
-                                                        <td class="text-right">地区：</td>
-                                                        <td class="text-left">
-                                                                <ul class="nav nav-pills">
-                                                                        <li class="active"><a href="">南区</a></li>
-                                                                        <li><a href="">北区</a></li>
-                                                                        <li><a href="">东区</a></li>
-                                                                        <li><a href="">西区</a></li>
-            
+                            <div class="panel-body pllist">
+                                <div id="collapseOne" class="panel-collapse collapse mb20"  role="tabpanel" aria-labelledby="headingOne">
+                                        <table class="table table-edit mb0">
+                                                <colgroup>
+                                                    <col style="width:15%">
+                                                    <col >
+                                                </colgroup>
+                                                 
+                                                    <tr>
+                                                            <td class="text-right">地区：</td>
+                                                            <td class="text-left">
+                                                                    <ul class="nav nav-pills">
+                                                                            <li class="active"><a href="">南区</a></li>
+                                                                            <li><a href="">北区</a></li>
+                                                                            <li><a href="">东区</a></li>
+                                                                            <li><a href="">西区</a></li>
+                
+                                                                        </ul>
+                                                                </td>
+                                                    </tr>
+                                                    <tr>
+                                                            <td class="text-right">类型：</td>
+                                                            <td class="text-left">
+                                                                    <ul class="nav nav-pills pull-left">
+                                                                            <li><a href="">一居室</a></li>
+                                                                            <li><a href="">二居室</a></li>
+                                                                            <li class="active"><a href="">三居室</a></li>
+                                                                            <li><a href="">四居室</a></li>
+                                                                            <li><a href="">五居室</a></li>
+                                                                            <li><a href="">其他</a></li>
+                
                                                                     </ul>
+                                                                   
+                
+                                                                </td>
+                                                    </tr>
+                                                    <tr>
+                                                            <td class="text-right">面积：</td>
+                                                            <td class="text-left">
+                                                                <input type="text" class="form-control inlineblock width50" placeholder="125">
+                                                                <span class="gray999">-</span> 
+                                                                <input type="text" class="form-control inlineblock width50" placeholder="125">
+                                                                <span class="gray999"> 平方米</span>
                                                             </td>
-                                                </tr>
-                                                <tr>
-                                                        <td class="text-right">类型：</td>
-                                                        <td class="text-left">
-                                                                <ul class="nav nav-pills pull-left">
-                                                                        <li><a href="">一居室</a></li>
-                                                                        <li><a href="">二居室</a></li>
-                                                                        <li class="active"><a href="">三居室</a></li>
-                                                                        <li><a href="">四居室</a></li>
-                                                                        <li><a href="">五居室</a></li>
-                                                                        <li><a href="">其他</a></li>
-            
-                                                                </ul>
-                                                               
-            
-                                                            </td>
-                                                </tr>
-                                                <tr>
-                                                        <td class="text-right">面积：</td>
-                                                        <td class="text-left"><input type="text" class="form-control width100 inlineblock"  placeholder="125"><span class="pl10 gray999">平米</span></td>
-                                                </tr>
-                                                <tr>
-                                                        <td class="text-right">朝向：</td>
-                                                        <td class="text-left">
-                                                                <ul class="nav nav-pills">
-                                                                        <li class="active"><a href="">东</a></li>
-                                                                        <li><a href="">南</a></li>
-                                                                        <li><a href="">西</a></li>
-                                                                        <li><a href="">北</a></li>
-            
-                                                                    </ul>
-                                                            </td>
-                                                </tr>
-                                                <tr>
-                                                        <td class="text-right">关键字搜索：</td>
-                                                        <td class="text-left"><input type="text" class="form-control inlineblock"  placeholder="西安高新万达广场 / 抚顺万达广场"><button class="btn btn-primary ml15" type="button"><i class="glyphicon glyphicon-search"></i> 搜索</button></td>
-                                                </tr>
-                                                
-                                    </table>
-                                    <div style="border-top:1px solid #f2f2f2;padding-top:20px;">
-                                        <div class="col-md-3">
-                                                <div class="thumbnail">
-                                                        <img src="images/i1.jpg" alt="...">
-                                                        <div class="caption">
-                                                          <p class="text-center"><a href="">户型M34-G-12</a></p>
-                                                        </div>
-                                                </div>
+                                                    </tr>
+                                                    <tr>
+                                                            <td class="text-right">朝向：</td>
+                                                            <td class="text-left">
+                                                                    <ul class="nav nav-pills">
+                                                                            <li class="active"><a href="">东</a></li>
+                                                                            <li><a href="">南</a></li>
+                                                                            <li><a href="">西</a></li>
+                                                                            <li><a href="">北</a></li>
+                
+                                                                        </ul>
+                                                                </td>
+                                                    </tr>
+                                                    <tr>
+                                                            
+                                                            <td class="text-left"></td>
+                                                    </tr>
+                                                    
+                                        </table>
+                                </div>
+                                    
+                                <div class="col-xs-3">
+                                        <div class="thumbnail">
+                                                <img src="images/i2.png"  alt="...">
+                                          <div class="caption">
+                                            <h4>5室2厅</h4>
+                                            <p class="gray999">朝南大飘窗</p>
+                                            <p><a href="#" class="btn btn-primary btn-sm" role="button">详情</a> <a href="#" class="btn btn-danger  btn-sm" role="button">取消收藏</a></p>
+                                          </div>
                                         </div>
-                                        <div class="col-md-3">
-                                                <div class="thumbnail">
-                                                        <img src="images/i1.jpg" alt="...">
-                                                        <div class="caption">
-                                                          <p class="text-center"><a href="">户型M34-G-12</a></p>
-                                                        </div>
-                                                </div>
+                                </div>
+                                <div class="col-xs-3">
+                                        <div class="thumbnail">
+                                                <img src="images/i2.png"  alt="...">
+                                          <div class="caption">
+                                            <h4>5室2厅</h4>
+                                            <p class="gray999">朝南大飘窗</p>
+                                            <p><a href="#" class="btn btn-primary btn-sm" role="button">详情</a> <a href="#" class="btn btn-danger  btn-sm" role="button">取消收藏</a></p>
+                                          </div>
                                         </div>
-                                        <div class="col-md-3">
-                                                <div class="thumbnail">
-                                                        <img src="images/i1.jpg" alt="...">
-                                                        <div class="caption">
-                                                          <p class="text-center"><a href="">户型M34-G-12</a></p>
-                                                        </div>
-                                                </div>
+                                </div>
+                                <div class="col-xs-3">
+                                        <div class="thumbnail">
+                                                <img src="images/i2.png"  alt="...">
+                                          <div class="caption" >
+                                              <div class="line "></div>
+                                            <h4>5室2厅</h4>
+                                            <p class="gray999">朝南大飘窗</p>
+                                            <p><a href="#" class="btn btn-primary btn-sm" role="button">详情</a> <a href="#" class="btn btn-danger  btn-sm" role="button">取消收藏</a></p>
+                                          </div>
                                         </div>
-                                        <div class="col-md-3">
-                                                <div class="thumbnail">
-                                                        <img src="images/i1.jpg" alt="...">
-                                                        <div class="caption">
-                                                          <p class="text-center"><a href="">户型M34-G-12</a></p>
-                                                        </div>
-                                                </div>
+                                </div>
+                                <div class="col-xs-3">
+                                        <div class="thumbnail">
+                                                <img src="images/i2.png"  alt="...">
+                                          <div class="caption">
+                                            <h4>5室2厅</h4>
+                                            <p class="gray999">朝南大飘窗</p>
+                                            <p><a href="#" class="btn btn-primary btn-sm" role="button">详情</a> <a href="#" class="btn btn-danger  btn-sm" role="button">取消收藏</a></p>
+                                          </div>
                                         </div>
-                                        <div class="col-md-3">
-                                                <div class="thumbnail">
-                                                        <img src="images/i1.jpg" alt="...">
-                                                        <div class="caption">
-                                                          <p class="text-center"><a href="">户型M34-G-12</a></p>
-                                                        </div>
-                                                </div>
+                                </div>
+                                <div class="col-xs-3">
+                                        <div class="thumbnail">
+                                                <img src="images/i2.png"  alt="...">
+                                          <div class="caption">
+                                            <h4>5室2厅</h4>
+                                            <p class="gray999">朝南大飘窗</p>
+                                            <p><a href="#" class="btn btn-primary btn-sm" role="button">详情</a> <a href="#" class="btn btn-danger  btn-sm" role="button">取消收藏</a></p>
+                                          </div>
                                         </div>
-                                        <div class="col-md-3">
-                                                <div class="thumbnail">
-                                                        <img src="images/i1.jpg" alt="...">
-                                                        <div class="caption">
-                                                          <p class="text-center"><a href="">户型M34-G-12</a></p>
-                                                        </div>
-                                                </div>
+                                </div>
+                                <div class="col-xs-3">
+                                        <div class="thumbnail">
+                                                <img src="images/i2.png"  alt="...">
+                                          <div class="caption">
+                                            <h4>5室2厅</h4>
+                                            <p class="gray999">朝南大飘窗</p>
+                                            <p><a href="#" class="btn btn-primary btn-sm" role="button">详情</a> <a href="#" class="btn btn-danger  btn-sm" role="button">取消收藏</a></p>
+                                          </div>
                                         </div>
-                                        <div class="col-md-3">
-                                                <div class="thumbnail">
-                                                        <img src="images/i1.jpg" alt="...">
-                                                        <div class="caption">
-                                                          <p class="text-center"><a href="">户型M34-G-12</a></p>
-                                                        </div>
-                                                </div>
+                                </div>
+                                <div class="col-xs-3">
+                                        <div class="thumbnail">
+                                                <img src="images/i2.png"  alt="...">
+                                          <div class="caption">
+                                            <h4>5室2厅</h4>
+                                            <p class="gray999">朝南大飘窗</p>
+                                            <p><a href="#" class="btn btn-primary btn-sm" role="button">详情</a> <a href="#" class="btn btn-danger  btn-sm" role="button">取消收藏</a></p>
+                                          </div>
                                         </div>
-                                        <div class="col-md-3">
-                                                <div class="thumbnail">
-                                                        <img src="images/i1.jpg" alt="...">
-                                                        <div class="caption">
-                                                          <p class="text-center"><a href="">户型M34-G-12</a></p>
-                                                        </div>
-                                                </div>
+                                </div>
+                                <div class="col-xs-3">
+                                        <div class="thumbnail">
+                                                <img src="images/i2.png"  alt="...">
+                                          <div class="caption">
+                                            <h4>5室2厅</h4>
+                                            <p class="gray999">朝南大飘窗</p>
+                                            <p><a href="#" class="btn btn-primary btn-sm" role="button">详情</a> <a href="#" class="btn btn-danger  btn-sm" role="button">取消收藏</a></p>
+                                          </div>
                                         </div>
-                                        <div class="col-md-3">
-                                                <div class="thumbnail">
-                                                        <img src="images/i1.jpg" alt="...">
-                                                        <div class="caption">
-                                                          <p class="text-center"><a href="">户型M34-G-12</a></p>
-                                                        </div>
-                                                </div>
+                                </div>
+                                <div class="col-xs-3">
+                                        <div class="thumbnail">
+                                                <img src="images/i2.png"  alt="...">
+                                          <div class="caption">
+                                            <h4>5室2厅</h4>
+                                            <p class="gray999">朝南大飘窗</p>
+                                            <p><a href="#" class="btn btn-primary btn-sm" role="button">详情</a> <a href="#" class="btn btn-danger  btn-sm" role="button">取消收藏</a></p>
+                                          </div>
                                         </div>
-                                        <div class="col-md-3">
-                                                <div class="thumbnail">
-                                                        <img src="images/i1.jpg" alt="...">
-                                                        <div class="caption">
-                                                          <p class="text-center"><a href="">户型M34-G-12</a></p>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                                <div class="thumbnail">
-                                                        <img src="images/i1.jpg" alt="...">
-                                                        <div class="caption">
-                                                          <p class="text-center"><a href="">户型M34-G-12</a></p>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                                <div class="thumbnail">
-                                                        <img src="images/i1.jpg" alt="...">
-                                                        <div class="caption">
-                                                          <p class="text-center"><a href="">户型M34-G-12</a></p>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                    </div>
+                                </div>
+
+                                    
                             </div>
                         </div>
                 </div>

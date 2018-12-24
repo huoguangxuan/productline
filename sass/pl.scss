@@ -18,11 +18,13 @@ ul{margin:0;padding:0;list-style: none;}
 .mt65{margin-top: 65px;}
 .bl4{border-left:4px solid #005bac}
 .pl10{padding-left: 10px;}
+.pr10{padding-right:10px}
 .pl40{padding-left:40px;}
 .mr15{margin-right: 15px;}
 .ml15{margin-left: 15px;}
 .width100{width:100px;}
 .width40{width:30px;}
+.width50{width:50px;}
 .font18{font-size:18px;}
 .grayccc{color:#ccc}
 .badge{
@@ -38,20 +40,29 @@ ul{margin:0;padding:0;list-style: none;}
     box-shadow: none!important
 }
 .table-edit > tbody >tr >td{
+    padding:4px 7px;
     
     > .nav-pills{
         > li {
             margin-right: 5px;
             &.active{
-                > a{background-color:#005bac;}
+                > a{border:1px solid #005bac;background-color:transparent;color:#005bac;}
             }
             >a{
 
-                padding:5px 15px;background-color:#f2f2f2;}
+                padding:2px 7px;background-color:transparent;
+                color:#666;
+                border:1px solid #ddd;
+            
+            }
         }
     }
     border:none;vertical-align: middle!important;
     &.text-right{color:#666}
+    > input{
+        padding:2px 7px!important;
+        height: 25px;
+    }
     > input,textarea{max-width: 500px;}
 }
 .z-depth-1 {
@@ -397,15 +408,19 @@ color: #666;
     }
 }
 .thumbnail{
+
     > .caption{
-        > h3{
-            font-size: 18px;
-        }
         
+        background-color: #f9f9f9;
+        > h4{
+            font-size: 16px;
+        }
+        > .line{
+            border-bottom:1px solid #ddd
+        }
     }
-    
     > img{
-        border:1px solid #ddd;
+        border:1px solid transparent;
     }
 }
 .img1-thumbnail{
@@ -445,9 +460,9 @@ color: #666;
     }
 }
 // 产品列表
-.thumbnail{border:2px solid transparent;
+.thumbnail{border:1px solid #ddd;
     cursor: pointer;
-    &:hover{border:2px solid #999;}
+    &:hover{border:1px solid #999;}
 }
 //产品详情
 
@@ -557,6 +572,10 @@ color: #666;
         }
     } 
     > .col-xs-3{padding-right:0px;}
+    
+    > .row{
+        >.col-xs-3{padding-right:0px;}
+    } 
 }
 // Mixin
 @mixin text-overflow() {
@@ -667,5 +686,14 @@ color: #666;
             }
         }
         
+    }
+}
+.panel-heading{
+    padding:7px 15px;
+}
+.pllist {
+   
+    > .col-xs-3{
+        padding-left:0px;
     }
 }

@@ -78,6 +78,10 @@ ul {
   padding-left: 10px;
 }
 
+.pr10 {
+  padding-right: 10px;
+}
+
 .pl40 {
   padding-left: 40px;
 }
@@ -96,6 +100,10 @@ ul {
 
 .width40 {
   width: 30px;
+}
+
+.width50 {
+  width: 50px;
 }
 
 .font18 {
@@ -134,6 +142,7 @@ ul {
 }
 
 .table-edit > tbody > tr > td {
+  padding: 4px 7px;
   border: none;
   vertical-align: middle !important;
 }
@@ -141,14 +150,22 @@ ul {
   margin-right: 5px;
 }
 .table-edit > tbody > tr > td > .nav-pills > li.active > a {
-  background-color: #005bac;
+  border: 1px solid #005bac;
+  background-color: transparent;
+  color: #005bac;
 }
 .table-edit > tbody > tr > td > .nav-pills > li > a {
-  padding: 5px 15px;
-  background-color: #f2f2f2;
+  padding: 2px 7px;
+  background-color: transparent;
+  color: #666;
+  border: 1px solid #ddd;
 }
 .table-edit > tbody > tr > td.text-right {
   color: #666;
+}
+.table-edit > tbody > tr > td > input {
+  padding: 2px 7px !important;
+  height: 25px;
 }
 .table-edit > tbody > tr > td > input, .table-edit > tbody > tr > td textarea {
   max-width: 500px;
@@ -531,11 +548,17 @@ ul {
   text-align: center;
 }
 
-.thumbnail > .caption > h3 {
-  font-size: 18px;
+.thumbnail > .caption {
+  background-color: #f9f9f9;
+}
+.thumbnail > .caption > h4 {
+  font-size: 16px;
+}
+.thumbnail > .caption > .line {
+  border-bottom: 1px solid #ddd;
 }
 .thumbnail > img {
-  border: 1px solid #ddd;
+  border: 1px solid transparent;
 }
 
 .img1-thumbnail {
@@ -585,11 +608,11 @@ ul {
 }
 
 .thumbnail {
-  border: 2px solid transparent;
+  border: 1px solid #ddd;
   cursor: pointer;
 }
 .thumbnail:hover {
-  border: 2px solid #999;
+  border: 1px solid #999;
 }
 
 .product-detail > .navbar-nav > li:hover {
@@ -695,6 +718,9 @@ ul {
   padding-right: 0px;
 }
 .tuijian > .col-xs-3 {
+  padding-right: 0px;
+}
+.tuijian > .row > .col-xs-3 {
   padding-right: 0px;
 }
 
@@ -830,4 +856,12 @@ ul {
 .search-value > .pills > li:hover > a, .search-value > .pills > li.active > a, .search-value > .pills > li:focus > a, .search-value > .pills > li:active > a {
   color: #005bac;
   font-weight: 600;
+}
+
+.panel-heading {
+  padding: 7px 15px;
+}
+
+.pllist > .col-xs-3 {
+  padding-left: 0px;
 }
