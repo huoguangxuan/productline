@@ -90,6 +90,10 @@ ul {
   margin-right: 15px;
 }
 
+.ml5 {
+  margin-left: 5px;
+}
+
 .ml15 {
   margin-left: 15px;
 }
@@ -548,9 +552,6 @@ ul {
   text-align: center;
 }
 
-.thumbnail > .caption {
-  background-color: #f9f9f9;
-}
 .thumbnail > .caption > h4 {
   font-size: 16px;
 }
@@ -731,6 +732,14 @@ ul {
   border-bottom-left-radius: 0;
 }
 
+.textoverflow275 {
+  display: block;
+  max-width: 275px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .textoverflow220 {
   display: inline-block;
   max-width: 220px;
@@ -859,7 +868,7 @@ ul {
 }
 
 .panel-heading {
-  padding: 7px 15px;
+  padding: 9px 15px;
 }
 
 .pllist > .col-xs-3 {

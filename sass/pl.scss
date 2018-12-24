@@ -21,6 +21,7 @@ ul{margin:0;padding:0;list-style: none;}
 .pr10{padding-right:10px}
 .pl40{padding-left:40px;}
 .mr15{margin-right: 15px;}
+.ml5{margin-left:5px;}
 .ml15{margin-left: 15px;}
 .width100{width:100px;}
 .width40{width:30px;}
@@ -408,10 +409,8 @@ color: #666;
     }
 }
 .thumbnail{
-
     > .caption{
-        
-        background-color: #f9f9f9;
+
         > h4{
             font-size: 16px;
         }
@@ -586,6 +585,11 @@ color: #666;
 #topsearchinput{
     min-width:400px;position: relative;border-top-left-radius: 0;border-bottom-left-radius:0
 }
+.textoverflow275{
+    display: block;
+    max-width: 275px;
+    @include text-overflow();
+}
 .textoverflow220 {
     display: inline-block;
     max-width: 220px;
@@ -689,7 +693,7 @@ color: #666;
     }
 }
 .panel-heading{
-    padding:7px 15px;
+    padding:9px 15px;
 }
 .pllist {
    
